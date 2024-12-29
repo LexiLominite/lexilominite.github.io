@@ -1,111 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Batman Theme</title>
+    <title>Batman-Themed Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <style>
+        /* Global Styles */
         body {
+            font-family: 'Orbitron', sans-serif;
             margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-color: black;
-            color: white;
+            padding: 0;
+            background-color: #000;
+            color: #e63946;
             overflow: hidden;
+            cursor: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Batman_logo.svg/1024px-Batman_logo.svg.png') 16 16, auto;
         }
 
-        header {
+        /* Background Animation */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://th.bing.com/th/id/OIP.gRG-1Gpx51FgMb0yDcCZxQAAAA?pid=ImgDet&rs=1') no-repeat center center;
+            background-size: cover;
+            z-index: -1;
+            opacity: 0.4;
+            filter: blur(5px);
+        }
+
+        /* Center Content */
+        .content {
             text-align: center;
             padding: 20px;
-            background: red;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            margin-top: 20vh;
         }
 
-        header h1 {
-            margin: 0;
+        h1 {
             font-size: 3rem;
+            margin-bottom: 20px;
             text-transform: uppercase;
+            animation: fadeInText 2s ease-in-out infinite alternate;
         }
 
-        #message {
-            margin: 20px;
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            animation: fadeInSlide 3s ease-in-out;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            animation: fadeInZoom 4s ease-in-out;
+        }
+
+        .redirect-btn {
+            padding: 10px 20px;
+            background: #e63946;
+            color: #000;
+            border: none;
+            border-radius: 5px;
             font-size: 1.2rem;
-            text-align: center;
-            background: rgba(255, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            animation: fadeInOut 4s infinite;
+            cursor: pointer;
+            animation: fadeInSlide 5s ease-in-out;
         }
 
-        @keyframes fadeInOut {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.5; }
+        .redirect-btn:hover {
+            background: #000;
+            color: #e63946;
+            border: 2px solid #e63946;
         }
 
+        /* Batman Animation */
         .batman {
             position: absolute;
             width: 100px;
-            height: 60px;
-            background: url('https://upload.wikimedia.org/wikipedia/en/3/3e/Batman_logo.png') no-repeat;
+            height: 50px;
+            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Batman.svg/2560px-Batman.svg.png') no-repeat center;
             background-size: contain;
             animation: fly 10s linear infinite;
         }
 
+        /* Animations */
         @keyframes fly {
-            0% { transform: translate(-150px, 0px); }
-            25% { transform: translate(50vw, -100px); }
-            50% { transform: translate(100vw, 50px); }
-            75% { transform: translate(50vw, -200px); }
-            100% { transform: translate(-150px, 0px); }
+            0% {
+                top: -10%;
+                left: -10%;
+                transform: rotate(0deg);
+            }
+
+            25% {
+                top: 20%;
+                left: 40%;
+                transform: rotate(20deg);
+            }
+
+            50% {
+                top: 50%;
+                left: 80%;
+                transform: rotate(0deg);
+            }
+
+            75% {
+                top: 20%;
+                left: 40%;
+                transform: rotate(-20deg);
+            }
+
+            100% {
+                top: -10%;
+                left: -10%;
+                transform: rotate(0deg);
+            }
         }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: red;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        @keyframes fadeInText {
+            0% {
+                color: #e63946;
+            }
+
+            100% {
+                color: #ffcc00;
+            }
         }
 
-        footer p {
-            margin: 0;
-            font-size: 1rem;
+        @keyframes fadeInSlide {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
-        .bat-signal {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Bat_signal.svg/512px-Bat_signal.svg.png') no-repeat;
-            background-size: contain;
-            width: 150px;
-            height: 150px;
-            opacity: 0;
-            animation: signalAppear 3s ease-in-out infinite;
-        }
+        @keyframes fadeInZoom {
+            0% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
 
-        @keyframes signalAppear {
-            0%, 100% { opacity: 0; }
-            50% { opacity: 1; }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
     </style>
+    <script>
+        function redirect() {
+            alert("Redirecting to the Batcave...");
+            window.location.href = "https://bento.me/LexiLominite";
+        }
+    </script>
 </head>
-<body>
-    <header>
-        <h1>Welcome to Gotham</h1>
-    </header>
 
-    <div id="message">
-        If you are still seeing this in March 2025, please remember Batman to use some nights not just to save the city but also to work on this website. After all, even the Batmobile gets a tune-up now and then!
+<body>
+    <div class="content">
+        <h1>Welcome to the Dark Knight's Realm</h1>
+        <h2>If you're still seeing this in March 2025...</h2>
+        <p>Remember, even Batman needs to take some nights off from saving Gotham to work on this website.</p>
+        <p>Don’t worry. He promises to add more gadgets and flair soon. Meanwhile, why not click the button below?</p>
+        <button class="redirect-btn" onclick="redirect()">Want to learn more about the Batman from this Multiverse?</button>
     </div>
 
-    <div class="batman" style="top: 100px; left: 0;"></div>
-    <div class="batman" style="top: 300px; left: 0;"></div>
-    <div class="bat-signal"></div>
-
-    <footer>
-        <p>&copy; 2025 Gotham Studios. Dark Knights welcome!</p>
-    </footer>
+    <!-- Batman Animation -->
+    <div class="batman"></div>
 </body>
+
 </html>
