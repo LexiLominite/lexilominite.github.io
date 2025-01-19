@@ -1,0 +1,14 @@
+/* humanstxt.org */
+
+/* TEAM */
+    LexiLominite
+    Security Consultant @ EY GDS
+    Penetration Tester & Security Researcher
+    Contact: lalithkumar01010@gmail.com
+    Location: India
+
+/* SITE */
+    Last update: 2024
+    Standards: HTML5, CSS3, JavaScript
+    Components: React, Gatsby
+    Software: VS Code, Git

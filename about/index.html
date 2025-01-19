@@ -1,0 +1,1332 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 2.32.13"/><style type="text/css" id="server-side-jss">*, *:before, *:after {
+  box-sizing: border-box;
+}
+::selection {
+  color: #02161a;
+  background-color: #fae127;
+}
+::-moz-selection {
+  color: #02161a;
+  background-color: #fae127;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #02161a;
+}
+::-webkit-scrollbar-thumb {
+  border: 1px solid #fae127;
+  cursor: pointer;
+}
+::-webkit-scrollbar-thumb:hover {
+  border-color: #27e1fa;
+}
+html, body {
+  color: #cccccc;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Electrolize, sans-serif;
+  background-color: #02161a;
+}
+a {
+  color: #87f7fc;
+  outline: none;
+  transition: color 250ms ease-out;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+a:hover, a:focus {
+  color: #aff3f6;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #eeeeee;
+  margin: 0 0 20px;
+  display: block;
+  font-family: Orbitron, sans-serif;
+  line-height: 1;
+  text-shadow: 0 0 5px #27e1fa;
+  text-transform: uppercase;
+}
+h1 {
+  font-size: 27px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 14px;
+}
+p {
+  margin: 0 0 20px;
+  display: block;
+}
+img {
+  margin: 0 auto 20px;
+  border: 1px solid rgba(25,160,179,0.25);
+  display: block;
+  max-width: 100%;
+  min-height: 1px;
+  transition: border 250ms ease-out;
+  vertical-align: top;
+}
+img:hover {
+  border: 1px solid rgba(39,225,250,0.25);
+}
+blockquote {
+  margin: 0 0 20px 20px;
+  display: block;
+  padding: 0 40px 0 40px;
+  position: relative;
+}
+blockquote::before {
+  top: 0;
+  left: 0;
+  color: #19a0b3;
+  content: "";
+  display: block;
+  position: absolute;
+  font-size: 30px;
+  font-style: normal;
+  transition: color 200ms ease-out;
+  font-family: "Material Design Icons";
+  line-height: 1;
+  font-weight: normal;
+}
+blockquote:hover::before, blockquote:focus::before {
+  color: #27e1fa;
+}
+
+.c015 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+}
+.c016 {
+  z-index: 0;
+  position: fixed;
+  background-color: #000000;
+}
+.c017 {
+  z-index: 0;
+}
+.c018 {
+  z-index: 0;
+  background-image: radial-gradient(rgba(39,225,250,0.1) 25%, transparent);
+}
+.c019 {
+  z-index: 1;
+}
+.c0110 {
+  left: 0;
+  right: 0;
+  height: 1px;
+  position: absolute;
+  box-shadow: 0 0 1px rgba(2,22,26,0.5);
+  background-color: #02161a;
+}
+.c0111 {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: block;
+}
+.c0113 {
+  stroke: #043b3b;
+  stroke-width: 1;
+}
+.c0118 {
+  fill: none;
+  stroke: #043b3b;
+  stroke-width: 1;
+}
+.c0119 {
+  fill: none;
+  stroke: #27e1fa;
+  opacity: 0;
+  stroke-width: 1;
+}
+.c0120 {
+  fill: #065353;
+}
+.c0123 {
+  z-index: 1;
+  display: flex;
+}
+.c0124 {
+  opacity: 0;
+}
+.c0125 {
+  opacity: 0;
+}
+.c0126 {
+  opacity: 0;
+}
+.c0127 {
+  opacity: 0;
+}
+.c0128 {
+  opacity: 0;
+}
+
+.c0144 {
+  display: inline-block;
+  position: relative;
+}
+.c0145 {
+  display: inline-block;
+}
+.c0146 {
+  top: 0;
+  left: 0;
+  right: 0;
+  display: inline-block;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.c0148 {
+  opacity: 0;
+}
+.c0149 .c0145 {
+  opacity: 0;
+}
+.c0149 .c0146 {
+  opacity: 1;
+}
+
+.c0138 {
+  border: none;
+  margin: 0;
+  display: block;
+  padding: 0;
+  position: relative;
+  box-shadow: none;
+  text-shadow: none;
+}
+.c0139 {
+  border: none;
+  outline: none;
+  user-select: none;
+}
+.c0140 {
+  top: 0;
+  left: 0;
+  position: absolute;
+  visibility: hidden;
+}
+.c0141 {
+  margin: 0;
+  border: none;
+  filter: drop-shadow(0 0 1.5px #27e1fa);
+  display: block;
+  padding: 0;
+  opacity: 0;
+}
+.c0142 {
+  fill: none;
+  stroke: #eeeeee;
+  transition: stroke 250ms ease-out;
+  stroke-width: 16;
+}
+.c0143:hover .c0142 {
+  stroke: #27e1fa;
+}
+.c0150 {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  min-width: 600px;
+  max-width: 800px;
+  align-items: center;
+  user-select: none;
+  flex-direction: row;
+  justify-content: center;
+}
+.c0151 {
+  color: #cccccc;
+  display: block;
+  padding: 0 10px;
+  font-size: 14px;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+  text-shadow: 0 0 5px #27e1fa;
+  font-family: Orbitron, sans-serif;
+  text-transform: uppercase;
+}
+.c0152 {
+  width: 0;
+  color: #fae127;
+  display: none;
+  transform: scale(1, 0);
+  text-shadow: 0 0 5px #fae127;
+  font-weight: normal;
+  transform-origin: center center;
+}
+.c0153 {
+  overflow: hidden;
+}
+.c0153.link-active {
+  color: #fae127;
+  text-shadow: 0 0 5px #fae127;
+}
+.c0153:hover, .c0153:focus {
+  color: #7eecfb;
+  text-shadow: 0 0 5px #7eecfb;
+}
+@media (min-width: 768px) {
+  .c0151 {
+    display: block;
+  }
+  .c0152 {
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .c0150 {
+    gap: 10;
+    min-width: 100%;
+    flex-direction: column;
+  }
+  .c0151 {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .c0152 {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .c0150 {
+    min-width: 90%;
+    max-width: 100%;
+  }
+  .c0151 {
+    padding: 5px 10px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .c0150 {
+    min-width: 500px;
+  }
+}
+.c0154 {
+  opacity: 1;
+}
+.c0131 {
+  width: 100%;
+  margin: 0 auto 10px;
+  display: block;
+  position: relative;
+}
+.c0132 {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+.c0134 {
+  width: 100%;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  padding: 20px 20px 10px;
+  position: relative;
+  max-width: 1000px;
+  flex-direction: column;
+}
+.c0135 {
+  width: 100%;
+  margin: 0 auto 10px;
+  max-width: 300px;
+}
+.c0136 {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .c0131 {
+    margin-bottom: 20px;
+  }
+  .c0134 {
+    padding: 20px 20px 30px;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .c0135 {
+    margin: 0;
+  }
+  .c0136 {
+    margin: 0;
+    max-width: 375px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c0136 {
+    width: 420px;
+    margin: 0;
+    max-width: none;
+  }
+}
+.c0137 {
+  opacity: 0;
+}
+.c01100 {
+  display: flex;
+  opacity: 0;
+  user-select: none;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.c01101 {
+  flex: 1;
+  color: #cccccc;
+  height: 24px;
+  display: block;
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+  text-shadow: 0 0 5px #27e1fa;
+}
+.c01101:hover {
+  color: #27e1fa;
+}
+.c01102 {
+  margin: 0;
+  display: block;
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+  white-space: nowrap;
+}
+.c01103 {
+  color: #cccccc;
+  display: block;
+  transition: opacity 250ms ease-out,color 250ms ease-out;
+}
+.c01103:hover {
+  color: #27e1fa;
+  opacity: 1;
+}
+.c01104 {
+  text-shadow: 0 0 5px #27e1fa;
+  opacity: 1;
+}
+.c0192 {
+  position: relative;
+  margin-top: 10px;
+}
+.c0193 {
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+}
+.c0195 {
+  z-index: 10;
+  padding: 20px 10px 10px;
+  position: relative;
+}
+.c0196 {
+  margin: 0 auto 10px;
+  max-width: 400px;
+}
+.c0197 {
+  height: 20px;
+  padding: 0;
+  font-size: 20px;
+}
+.c0198 {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 400px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .c0192 {
+    margin-top: 20px;
+  }
+  .c0195 {
+    padding: 30px 20px 20px;
+  }
+  .c0196 {
+    margin-bottom: 20px;
+  }
+  .c0197 {
+    height: 24px;
+    font-size: 24px;
+  }
+  .c0198 {
+    font-size: 14px;
+  }
+}
+.c0199 {
+  opacity: 0;
+}
+
+.c0129 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+}
+.c0130 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .c0130 {
+    overflow: hidden;
+  }
+}
+.c011 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  padding: 20px;
+  position: absolute;
+  background-color: #000000;
+}
+.c012 {
+  margin: auto;
+  font-family: monospace;
+}
+.c012 button {
+  font-family: monospace;
+}
+* {
+  cursor: none !important;
+}
+html, body {
+  cursor: none !important;
+}
+a, button, input, select, textarea {
+  cursor: none !important;
+}
+[role="button"] {
+  cursor: none !important;
+}
+.clickable {
+  cursor: none !important;
+}
+*:hover {
+  cursor: none !important;
+}
+*:active {
+  cursor: none !important;
+}
+*:focus {
+  cursor: none !important;
+}
+a:hover ~ div[class*="cursor"], button:hover ~ div[class*="cursor"], .clickable:hover ~ div[class*="cursor"], [role="button"]:hover ~ div[class*="cursor"] {
+  transform: scale(1.5);
+  mix-blend-mode: difference;
+  background-color: #27e1fa22;
+}
+input:hover ~ div[class*="cursor"], textarea:hover ~ div[class*="cursor"], select:hover ~ div[class*="cursor"] {
+  transform: scale(0.8);
+  background-color: #27e1fa44;
+}
+.c013 {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #27e1fa;
+  z-index: 99999;
+  position: fixed;
+  transform: translate(-100px, -100px);
+  transition: all 0.15s ease-out, opacity 0.3s ease-in-out;
+  will-change: transform;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  backface-visibility: hidden;
+}
+.c013::after {
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transition: all 0.15s ease-out;
+  border-radius: 50%;
+  background-color: #27e1fa;
+}
+.c013.hovering {
+  transform: scale(1.5);
+  background-color: #27e1fa22;
+}
+.c013.hovering::after {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.c014 {
+  width: 4px;
+  height: 4px;
+  z-index: 99999;
+  position: fixed;
+  transform: translate(-100px, -100px);
+  transition: width 0.2s, height 0.2s, opacity 0.3s ease-in-out;
+  will-change: transform;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background-color: #27e1fa;
+  backface-visibility: hidden;
+}
+.c014.hovering {
+  width: 8px;
+  height: 8px;
+}
+@media (max-width: 480px) {
+  .c011 {
+    padding: 10px;
+  }
+  .c012 {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .c011 {
+    padding: 15px;
+  }
+  .c012 {
+    max-width: 400px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .c012 {
+    max-width: 500px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .c012 {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1201px) {
+  .c012 {
+    max-width: 700px;
+  }
+}
+.c0191 {
+  display: inline-block;
+  opacity: 0;
+}
+.c0188 {
+  flex: 1;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  position: relative;
+  max-width: 1000px;
+}
+.c0189 {
+  top: 0;
+  left: 10px;
+  right: 10px;
+  bottom: 0;
+  z-index: 1;
+  outline: 2px solid #000000;
+  position: absolute;
+  outline-offset: 2px;
+  background-color: rgba(0,0,0,0.5);
+}
+.c0190 {
+  flex: 1;
+  margin: 10px 10px 10px 20px;
+  z-index: 2;
+  padding: 0 10px 0 0;
+  position: relative;
+}
+.c0190 > *:last-child, .c0190 > article > *:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .c0188 {
+    min-height: 1px;
+  }
+  .c0189 {
+    top: 0;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+  }
+  .c0190 {
+    margin: 30px 40px 30px 50px;
+    padding: 0 10px 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .c0190 img {
+    max-width: 80%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .c0190 {
+    margin: 50px 60px 50px 70px;
+    padding: 0 10px 0 0;
+  }
+}
+html, body {
+  cursor: none;
+}
+html *, body * {
+  cursor: none;
+}
+.c0155 {
+  margin: 0 auto;
+  padding: 20px 20px 30px;
+  position: relative;
+  max-width: 1000px;
+}
+.c0155 h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+}
+.c0155 h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+.c0156 {
+  gap: 40;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .c0156 {
+    gap: 20;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.c0157 {
+  flex: 1;
+}
+.c0158 {
+  color: #cccccc;
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.c0159 {
+  gap: 20;
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.c0160 {
+  gap: 10;
+  border: 2px solid #eeeeee;
+  display: flex;
+  padding: 15px;
+  box-shadow: 0 0 20px #eeeeee33;
+  align-items: center;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.c0160 i {
+  color: #eeeeee;
+  font-size: 28px;
+}
+.c0160:hover {
+  box-shadow: 0 0 30px #eeeeee66;
+  border-color: #ffffff;
+}
+.c0161 {
+  gap: 20;
+  display: grid;
+  margin-bottom: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.c0162 {
+  border: 1px solid #b5a005;
+  padding: 20px;
+  position: relative;
+  transition: all 250ms ease-out;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.c0162::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #fae127;
+  content: "";
+  position: absolute;
+  transform: rotate(0deg);
+  transition: all 250ms ease-out;
+  border-radius: 4px;
+}
+.c0162:hover {
+  transform: translateY(-5px);
+  border-color: #fae127;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.c0162:hover::before {
+  transform: rotate(10deg);
+  border-color: #feec67;
+}
+.c0163 {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+.c0163::before {
+  top: 0;
+  left: 0;
+  width: 2px;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  background: linear-gradient(to bottom, 
+          #bbbbbb00, 
+          #eeeeee, 
+          #bbbbbb00);
+}
+.c0164 {
+  border: 1px solid #bbbbbb;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.c0164::before {
+  top: 50%;
+  left: -34px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #eeeeee;
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  transition: all 250ms ease-out;
+  border-radius: 50%;
+  background-color: #02161a;
+}
+.c0164:hover {
+  border-color: #eeeeee;
+}
+.c0164 + .c0164 {
+  margin-top: 30px;
+}
+.c0164:hover::before {
+  box-shadow: 0 0 15px #eeeeee;
+  background-color: #eeeeee;
+}
+.c0165 {
+  color: #27e1fa;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+.c0166 {
+  opacity: 0.8;
+}
+.c0167 {
+  gap: 20;
+  display: grid;
+  margin-bottom: 30px;
+}
+.c0168 {
+  border: 1px solid #19a0b3;
+  padding: 25px;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, 
+        rgba(0,0,0,0.4) 0%,
+        rgba(0,0,0,0.2) 100%);
+  transition: all 250ms ease-out;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.c0168::after {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  background: linear-gradient(45deg, 
+          #27e1fa11 25%, 
+          transparent 25%, 
+          transparent 75%, 
+          #27e1fa11 75%);
+  transition: all 250ms ease-out;
+  background-size: 4px 4px;
+}
+.c0168:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 10px 30px -10px #27e1fa33;
+  border-color: #27e1fa;
+}
+.c0168:hover::after {
+  opacity: 0.8;
+  background-size: 6px 6px;
+}
+.c0169 {
+  color: #27e1fa;
+  margin-bottom: 5px;
+}
+.c0170 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+.c0171 {
+  opacity: 0.8;
+}
+.c0172 {
+  margin-bottom: 30px;
+}
+.c0173 {
+  border: 1px solid #b5a005;
+  padding: 15px 25px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  transition: all 250ms ease-out;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.c0173::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  opacity: 0.5;
+  position: absolute;
+  background: linear-gradient(45deg, 
+          #b5a00511 25%, 
+          transparent 25%, 
+          transparent 75%, 
+          #b5a00511 75%);
+  transition: all 250ms ease-out;
+  background-size: 4px 4px;
+}
+.c0173:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 0 20px #fae12733;
+  border-color: #fae127;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.c0173:hover::before {
+  opacity: 0.8;
+  background-size: 6px 6px;
+}
+.c0174 {
+  gap: 15;
+  display: flex;
+  margin-bottom: 30px;
+  flex-direction: column;
+}
+.c0175 {
+  gap: 20;
+  border: 1px solid #27e1fa;
+  display: flex;
+  padding: 20px;
+  transition: all 250ms ease-out;
+  align-items: center;
+  border-left: 4px solid #27e1fa;
+  border-radius: 4px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.c0175:hover {
+  transform: translateX(10px);
+  border-left: 8px solid #7eecfb;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.c0175:hover .c0177 {
+  transform: scale(1.1) rotate(5deg);
+  border-color: #7eecfb;
+}
+.c0176 {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+}
+.c0177 {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fae127;
+  padding: 5px;
+  object-fit: contain;
+  transition: all 250ms ease-out;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.c0178 {
+  gap: 5;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.c0179 {
+  color: #cccccc;
+  margin-bottom: 4px;
+}
+.c0180 {
+  color: #27e1fa;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+.c0181 {
+  color: #fae127;
+  opacity: 0.8;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+.c0182 {
+  font-size: 0.95em;
+  margin-top: 10px;
+  border-top: 1px solid #bbbbbb33;
+  padding-top: 10px;
+  line-height: 1.6;
+}
+.c0182 ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+.c0182 li {
+  margin-bottom: 5px;
+}
+.c0182 li:last-child {
+  margin-bottom: 0;
+}
+.c0183 {
+  color: #27e1fa;
+  opacity: 0.7;
+  animation: $blink 1.5s ease-in-out infinite;
+  margin-top: 10px;
+  font-family: Electrolize, sans-serif;
+}
+.c0184 {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+.c0184:hover .c0185 {
+  transform: scale(0.5);
+}
+.c0184:hover .c0185.position0 {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.c0184:hover .c0185.position1 {
+  transform: translate(50%, -50%) scale(0.5);
+}
+.c0184:hover .c0185.position2 {
+  transform: translate(-50%, 50%) scale(0.5);
+}
+.c0184:hover .c0185.position3 {
+  transform: translate(50%, 50%) scale(0.5);
+}
+.c0185 {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #27e1fa;
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  box-shadow: 0 0 20px #27e1fa33;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 8px;
+  background-color: #000000;
+}
+.c0185.active {
+  opacity: 1;
+  z-index: 2;
+  transform: scale(1);
+}
+.c0185:hover {
+  z-index: 3;
+  box-shadow: 0 0 30px #27e1fa66;
+  border-color: #7eecfb;
+}
+.c0185.position0 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.c0185.position1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, -50%) scale(1);
+}
+.c0185.position2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) scale(1);
+}
+.c0185.position3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%) scale(1);
+}
+.c0185:hover .c0186 {
+  transform: scale(1.1);
+}
+.c0186 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: scale(1.01);
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  object-position: center;
+  backface-visibility: hidden;
+}
+.c0187 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: 2;
+  position: absolute;
+  animation: $scan 3s linear infinite;
+  background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        #27e1fa22 50%,
+        transparent 100%
+      );
+  pointer-events: none;
+  background-size: 100% 4px;
+}
+@keyframes blink {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+@keyframes scan {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@media (max-width: 480px) {
+  .c0155 {
+    padding: 10px 10px 20px;
+  }
+  .c0158 {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+  .c0159 {
+    gap: 15;
+    grid-template-columns: 1fr;
+  }
+  .c0160 {
+    padding: 12px;
+  }
+  .c0160 i {
+    font-size: 20px;
+  }
+  .c0161 {
+    gap: 10;
+    grid-template-columns: 1fr;
+  }
+  .c0162 {
+    padding: 12px;
+    font-size: 0.9em;
+  }
+  .c0163 {
+    padding-left: 20px;
+  }
+  .c0163::before {
+    left: 10px;
+  }
+  .c0164 {
+    padding: 15px;
+  }
+  .c0164::before {
+    left: -24px;
+    width: 10px;
+    height: 10px;
+  }
+  .c0165 {
+    font-size: 1.1em;
+  }
+  .c0166 {
+    font-size: 0.9em;
+  }
+  .c0182 {
+    font-size: 0.85em;
+    margin-top: 8px;
+    padding-top: 8px;
+  }
+  .c0167 {
+    gap: 15;
+  }
+  .c0168 {
+    padding: 15px;
+  }
+  .c0168:hover {
+    transform: translateY(-3px) scale(1.01);
+  }
+  .c0169 {
+    font-size: 0.9em;
+  }
+  .c0170 {
+    font-size: 1em;
+  }
+  .c0171 {
+    font-size: 0.9em;
+  }
+  .c0172 {
+    margin-bottom: 20px;
+  }
+  .c0173 {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+  .c0174 {
+    gap: 10;
+  }
+  .c0175 {
+    gap: 10;
+    padding: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .c0175:hover {
+    transform: translateX(5px);
+  }
+  .c0176 {
+    width: 50px;
+    height: 50px;
+  }
+  .c0178 {
+    gap: 3;
+  }
+  .c0179 {
+    font-size: 0.9em;
+    margin-bottom: 2px;
+  }
+  .c0180 {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .c0155 {
+    padding: 15px 15px 25px;
+  }
+  .c0159 {
+    gap: 15;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .c0161 {
+    gap: 15;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .c0163 {
+    padding-left: 25px;
+  }
+  .c0164 {
+    padding: 18px;
+  }
+  .c0167 {
+    gap: 18;
+  }
+  .c0168 {
+    padding: 20px;
+  }
+  .c0174 {
+    gap: 12;
+  }
+  .c0175 {
+    padding: 18px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .c0155 {
+    padding: 20px 20px 30px;
+  }
+  .c0161 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .c0163 {
+    padding-left: 30px;
+  }
+  .c0174 {
+    gap: 15;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .c0155 {
+    max-width: 900px;
+  }
+  .c0161 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1201px) {
+  .c0155 {
+    max-width: 1000px;
+  }
+  .c0161 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}</style><title data-react-helmet="true">LexiLominite - Security Consultant &amp; Penetration Tester</title><link data-react-helmet="true" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700|Electrolize"/><link data-react-helmet="true" rel="stylesheet" href="//cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css"/><meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><meta data-react-helmet="true" name="robots" content="index, follow"/><meta data-react-helmet="true" name="description" content="Security Consultant at EY GDS, OSCP certified penetration tester, and former national archery athlete. Specializing in web application and API security testing."/><meta data-react-helmet="true" name="keywords" content="LexiLominite, Penetration Testing, Web Security, API Security, OSCP, CRTP, Bug Bounty, EY GDS"/><meta data-react-helmet="true" property="og:title" content="LexiLominite - Security Consultant &amp; Penetration Tester"/><meta data-react-helmet="true" property="og:site_name" content="LexiLominite - Security Consultant &amp; Penetration Tester"/><meta data-react-helmet="true" property="og:description" content="Security Consultant at EY GDS, OSCP certified penetration tester, and former national archery athlete. Specializing in web application and API security testing."/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:url" content="https://lexilominite.com"/><meta data-react-helmet="true" property="og:image"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:title" content="LexiLominite - Security Consultant &amp; Penetration Tester"/><meta data-react-helmet="true" name="twitter:description" content="Security Consultant at EY GDS, OSCP certified penetration tester, and former national archery athlete. Specializing in web application and API security testing."/><meta data-react-helmet="true" name="twitter:site" content="@LexiLominite"/><meta data-react-helmet="true" name="twitter:creator" content="@LexiLominite"/><meta data-react-helmet="true" name="twitter:image"/><meta data-react-helmet="true" name="mobile-web-app-capable" content="yes"/><meta data-react-helmet="true" name="theme-color" content="#000000"/><meta data-react-helmet="true" name="apple-mobile-web-app-capable" content="yes"/><meta data-react-helmet="true" name="apple-mobile-web-app-title" content="LexiLominite - Security Consultant &amp; Penetration Tester"/><meta data-react-helmet="true" name="apple-mobile-web-app-status-bar-style" content="#000000"/><meta data-react-helmet="true" name="msapplication-TileColor" content="#000000"/><link rel="icon" href="/favicon-32x32.png?v=f6278631030a7d9c8bd2f7909d746d36" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#000000"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=f6278631030a7d9c8bd2f7909d746d36"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link as="script" rel="preload" href="/webpack-runtime-11b5877fa7442b8f7766.js"/><link as="script" rel="preload" href="/framework-22d51f0f5ee9f1c9c6e1.js"/><link as="script" rel="preload" href="/app-00a46b251f29a0fe4555.js"/><link as="script" rel="preload" href="/component---src-pages-about-js-27e24904b021fe0ec161.js"/><link as="fetch" rel="preload" href="/page-data/about/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="c013" style="transform:translate(-100px, -100px) scale(1);opacity:0"></div><div class="c014" style="transform:translate(-100px, -100px);width:4px;height:4px;opacity:0"></div><div class="c016 c015"><div class="c017 c015"><div class="c018 c015 c0124"></div><div class="c019 c015"></div><svg class="c0111 c015 c0112 c0126" xmlns="http://www.w3.org/2000/svg"></svg><svg class="c0111 c015 c0116" xmlns="http://www.w3.org/2000/svg"></svg></div><div class="c0123 c015"><div class="c0129"><header class="c0131"><svg class="c0132" xmlns="http://www.w3.org/2000/svg"></svg><div class="c0134"><h1 class="c0138 c0135"><a title="cybsec logo" class="c0139" href="/"><span class="c0140">LexiLominite</span><svg class="c0141" viewBox="0 0 1400 92" xmlns="http://www.w3.org/2000/svg"></svg><center><a class="" href="#"><span class="c0144 c0148"><span class="c0145">LexiLominite</span></span></a></center></a></h1><nav class="c0150 c0136"><b class="c0151 c0152">|</b><a class="c0151 c0153 c0154" href="/about"><span class="c0144 c0148"><span class="c0145">About</span></span></a><b class="c0151 c0152">|</b><a class="c0151 c0153 c0154" href="/blog"><span class="c0144 c0148"><span class="c0145">Blog</span></span></a><b class="c0151 c0152">|</b><a class="c0151 c0153 c0154" href="/certifications"><span class="c0144 c0148"><span class="c0145">Certifications</span></span></a><b class="c0151 c0152">|</b><a class="c0151 c0153 c0154" href="/journey"><span class="c0144 c0148"><span class="c0145">Journey</span></span></a><b class="c0151 c0152">|</b></nav></div></header><div class="c0130"><main class="c0191 c0188"><div class="c0189"></div><div class="c0190"><div class="c0155"><h1><span class="c0144 c0148"><span class="c0145">Lalith Kumar</span></span></h1><div class="c0156"><div class="c0157"><div class="c0158"><span class="c0144 c0148"><span class="c0145">I am an extremely motivated and hardworking individual with a passion for cybersecurity. I possess strong technical and analytical skills that are essential for performing penetration testing and vulnerability assessments.</span></span></div><span class="c0144 c0148 c0183"><span class="c0145">[ hover_to_decode ]</span></span></div><div class="c0184"><div class="c0185 active"><img src="/images/me.png" alt="Lalith Kumar" class="c0186"/><div class="c0187"></div></div><div class="c0185"><img src="/images/me2.png" alt="Lalith Kumar Alt 1" class="c0186"/><div class="c0187"></div></div><div class="c0185"><img src="/images/favicon.png" alt="Lalith Kumar Alt 2" class="c0186"/><div class="c0187"></div></div><div class="c0185"><img src="/images/meLifting.png" alt="Lalith Kumar Lifting" class="c0186"/><div class="c0187"></div></div></div></div><h2><span class="c0144 c0148"><span class="c0145">Contact</span></span></h2><div class="c0159"><div class="c0160"><i class="mdi mdi-email"></i><div><span class="c0144 c0148"><span class="c0145">lalithkumar01010@gmail.com (RIP inbox)</span></span><span class="c0144 c0148"><span class="c0145"> </span></span><span role="img" aria-label="skull">💀</span></div></div><div class="c0160"><i class="mdi mdi-web"></i><span class="c0144 c0148"><span class="c0145">lexilominite.com</span></span></div></div><h2><span class="c0144 c0148"><span class="c0145">Certifications</span></span></h2><div class="c0174"><a class="c0175" href="/certifications#cert-oscp"><div class="c0176"><img src="/images/OSCP_Logo.png" alt="OSCP" class="c0177"/></div><div class="c0178"><div class="c0179"><span class="c0144 c0148"><span class="c0145">OFFENSIVE SECURITY CERTIFIED PROFESSIONAL (OSCP)</span></span></div><div class="c0180"><span class="c0144 c0148"><span class="c0145">FEB 2024</span></span></div></div></a><a class="c0175" href="/certifications#cert-crtp"><div class="c0176"><img src="/images/crtp_logo.jpeg" alt="CRTP" class="c0177"/></div><div class="c0178"><span class="c0144 c0148"><span class="c0145">CERTIFIED RED TEAM PROFESSIONAL (CRTP)</span></span><span class="c0180">MAY 2022</span></div></a><a class="c0175" href="/certifications#cert-ecppt"><div class="c0176"><img src="/images/ecpptv2_logo.jpeg" alt="eCPPTv2" class="c0177"/></div><div class="c0178"><span class="c0144 c0148"><span class="c0145">ELEARNSECURITY CERTIFIED PROFESSIONAL PENETRATION TESTER (eCPPTv2)</span></span><span class="c0180">NOV 2021</span></div></a><a class="c0175" href="/certifications#cert-ewpt"><div class="c0176"><img src="/images/ewptv1_logo.jpeg" alt="eWPT" class="c0177"/></div><div class="c0178"><span class="c0144 c0148"><span class="c0145">ELEARNSECURITY WEB APPLICATION PENETRATION TESTER (eWPT)</span></span><span class="c0180">DEC 2021</span></div></a><a class="c0175" href="/certifications#cert-pnpt"><div class="c0176"><img src="/images/pnpt_logo.png" alt="PNPT" class="c0177"/></div><div class="c0178"><span class="c0144 c0148"><span class="c0145">PRACTICAL NETWORK PENETRATION TESTER (PNPT)</span></span><span class="c0180">JUL 2021</span></div></a><a class="c0175" href="/certifications#cert-ejpt"><div class="c0176"><img src="/images/ejptv1_logo.jpeg" alt="eJPT" class="c0177"/></div><div class="c0178"><span class="c0144 c0148"><span class="c0145">ELEARNSECURITY JUNIOR PENETRATION TESTER (eJPT)</span></span><span class="c0180">APR 2021</span></div></a></div><h2><span class="c0144 c0148"><span class="c0145">Skills</span></span></h2><div class="c0161"><div class="c0162"><span class="c0144 c0148"><span class="c0145">Penetration Testing</span></span></div><div class="c0162"><span class="c0144 c0148"><span class="c0145">Ethical Hacking</span></span></div><div class="c0162"><span class="c0144 c0148"><span class="c0145">Web Application Security</span></span></div><div class="c0162"><span class="c0144 c0148"><span class="c0145">Network Security</span></span></div><div class="c0162"><span class="c0144 c0148"><span class="c0145">Vulnerability Assessment</span></span></div><div class="c0162"><span class="c0144 c0148"><span class="c0145">Report Writing</span></span></div></div><h2><span class="c0144 c0148"><span class="c0145">Experience</span></span></h2><div class="c0163"><div class="c0164"><div class="c0165"><span class="c0144 c0148"><span class="c0145">Ernst &amp; Young Global Delivery Services</span></span></div><div class="c0166"><span class="c0144 c0148"><span class="c0145">Security Consultant - Level 2</span></span></div><div class="c0181"><span class="c0144 c0148"><span class="c0145">June 2024 - Present</span></span></div><div class="c0182"><span class="c0144 c0148"><span class="c0145">• Web Application and API Security Testing • Leading security assessment engagements • Developing custom security testing frameworks</span></span></div></div><div class="c0164"><div class="c0165"><span class="c0144 c0148"><span class="c0145">VIEH Group</span></span></div><div class="c0166"><span class="c0144 c0148"><span class="c0145">Team Leader &amp; Jr Penetration Tester</span></span></div><div class="c0181"><span class="c0144 c0148"><span class="c0145">Sep 2022 - May 2024</span></span></div></div><div class="c0164"><div class="c0165"><span class="c0144 c0148"><span class="c0145">Security Knock</span></span></div><div class="c0166"><span class="c0144 c0148"><span class="c0145">Cybersecurity Intern</span></span></div><div class="c0181"><span class="c0144 c0148"><span class="c0145">May 2022 - July 2022</span></span></div></div><div class="c0164"><div class="c0165"><span class="c0144 c0148"><span class="c0145">Bug Claim</span></span></div><div class="c0166"><span class="c0144 c0148"><span class="c0145">Penetration Tester</span></span></div><div class="c0181"><span class="c0144 c0148"><span class="c0145">Jul 2021 - Aug 2021</span></span></div></div></div><h2><span class="c0144 c0148"><span class="c0145">Education</span></span></h2><div class="c0167"><div class="c0168"><div><div class="c0169"><span class="c0144 c0148"><span class="c0145">2024 - 2028</span></span></div><div class="c0170"><span class="c0144 c0148"><span class="c0145">Bachelor of Science in Computer Science</span></span></div><div class="c0171"><span class="c0144 c0148"><span class="c0145">BITS Pilani</span></span></div></div></div><div class="c0168"><div><div class="c0169"><span class="c0144 c0148"><span class="c0145">2021 - 2024</span></span></div><div class="c0170"><span class="c0144 c0148"><span class="c0145">Diploma in Computer Engineering</span></span></div><div class="c0171"><span class="c0144 c0148"><span class="c0145">Smt B Seetha Polytechnic</span></span></div></div></div><div class="c0168"><div><div class="c0169"><span class="c0144 c0148"><span class="c0145">2017 - 2020</span></span></div><div class="c0170"><span class="c0144 c0148"><span class="c0145">10th Class</span></span></div><div class="c0171"><span class="c0144 c0148"><span class="c0145">The Future Kid&#x27;s School</span></span></div></div></div></div><h2><span class="c0144 c0148"><span class="c0145">Hobbies</span></span></h2><div class="c0172"><div class="c0161"><div class="c0173"><span class="c0144 c0148"><span class="c0145">Playing Chess</span></span></div><div class="c0173"><span class="c0144 c0148"><span class="c0145">Reading Non-Fiction &amp; Self Improvement</span></span></div><div class="c0173"><span class="c0144 c0148"><span class="c0145">Working Out &amp; Fitness</span></span></div></div></div></div></div></main><footer class="c0192"><svg class="c0193" xmlns="http://www.w3.org/2000/svg"></svg><div class="c0195"><div class="c01100 c0196"><a title="Facebook" class="c01101 c0197" href="https://www.facebook.com/lexilominite" target="facebook"><span class="mdi mdi-facebook"></span></a><a title="Instagram" class="c01101 c0197" href="https://www.instagram.com/lexilominite" target="instagram"><span class="mdi mdi-instagram"></span></a><a title="Twitter" class="c01101 c0197" href="https://twitter.com/lexilominite" target="twitter"><span class="mdi mdi-twitter"></span></a><a title="Github" class="c01101 c0197" href="https://github.com/lexilominite" target="github"><span class="mdi mdi-github-circle"></span></a><a title="YouTube" class="c01101 c0197" href="https://youtube.com/@lexilominite" target="youtube"><span class="mdi mdi-youtube"></span></a><a title="Telegram" class="c01101 c0197" href="https://t.me/lexilominite" target="telegram"><span class="mdi mdi-telegram"></span></a><a title="Discord" class="c01101 c0197" href="https://discord.gg/lexilominite" target="discord"><span class="mdi mdi-discord"></span></a><a title="Blog" class="c01101 c0197" href="https://lexilominite.medium.com" target="blog"><span class="mdi mdi-blogger"></span></a><a title="LinkedIn" class="c01101 c0197" href="https://linkedin.com/in/lexilominite" target="linkedin"><span class="mdi mdi-linkedin"></span></a></div><p class="c01102 c0198"><a class="c01103 c01104" href="https://www.igconnect.in" target="github"><span class="c0144 c0148"><span class="c0145">— Fact: I&#x27;m a human —</span></span></a></p></div></footer></div></div><div class="c011"></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-158065992-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/about/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f48400997f9c75fece6a.js"],"app":["/app-00a46b251f29a0fe4555.js"],"component---src-pages-404-js":["/component---src-pages-404-js-9b96d3fb274cf803cb21.js"],"component---src-pages-about-js":["/component---src-pages-about-js-27e24904b021fe0ec161.js"],"component---src-pages-blog-js":["/component---src-pages-blog-js-ed15bfa02a150cd2c431.js"],"component---src-pages-blog-old-js":["/component---src-pages-blog-old-js-b3dfe10cc1eaca703386.js"],"component---src-pages-certifications-js":["/component---src-pages-certifications-js-bc454be64d9ad1f15c73.js"],"component---src-pages-certifications-old-js":["/component---src-pages-certifications-old-js-25d4f997be0d349da034.js"],"component---src-pages-experience-js":["/component---src-pages-experience-js-06e0571904314747069c.js"],"component---src-pages-index-js":["/component---src-pages-index-js-ee0996865345e8f0f2b9.js"],"component---src-pages-journey-js":["/component---src-pages-journey-js-1ca8d9ac416f68761456.js"]};/*]]>*/</script><script src="/polyfill-f48400997f9c75fece6a.js" nomodule=""></script><script src="/component---src-pages-about-js-27e24904b021fe0ec161.js" async=""></script><script src="/app-00a46b251f29a0fe4555.js" async=""></script><script src="/framework-22d51f0f5ee9f1c9c6e1.js" async=""></script><script src="/webpack-runtime-11b5877fa7442b8f7766.js" async=""></script></body></html>
